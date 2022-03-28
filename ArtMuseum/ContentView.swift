@@ -12,15 +12,36 @@ struct ContentView: View {
   var artworks = MockData.mockArtWorks
   
     var body: some View {
-      List(artworks, id: \.id){ artwork in
-        VStack(alignment: .leading){
-          Text(artwork.title)
-          HStack{
-            Text(artwork.artistDisplay)
-            Text(artwork.artistTitle)
+      NavigationView{
+        VStack(alignment: .leading) {
+          Text("Van Gogh")
+            .font(.title)
+            .bold()
+            .padding()
+          ScrollView(.horizontal, showsIndicators: false){
+            HStack{
+              ForEach(artworks, id: \.id){ artwork in
+                NavigationLink {
+                  ArtworkDetail(artWork: artwork)
+                } label: {
+                  Image(uiImage: artwork.image)
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .padding(.horizontal)
+                }
+              }
+            }
+            
           }
-        }.padding()
+          Spacer()
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
       }
+      
+      
+      
     }
 }
 

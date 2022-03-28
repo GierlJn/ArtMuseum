@@ -13,8 +13,9 @@ struct ArtWork: Codable, Identifiable{
   let artistDisplay: String
   let artistTitle: String
   let imageId: String
+  let altText: String
   
   var image: UIImage{
-    
+    PlaceholderImage.artworkFullSize
   }
 }
