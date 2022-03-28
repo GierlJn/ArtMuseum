@@ -9,11 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
   
-  var artworks = [ArtWork]()
+  var artworks = MockData.mockArtWorks
   
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+      List(artworks, id: \.id){ artwork in
+        VStack(alignment: .leading){
+          Text(artwork.title)
+          HStack{
+            Text(artwork.artistDisplay)
+            Text(artwork.artistTitle)
+          }
+        }.padding()
+      }
     }
 }
 

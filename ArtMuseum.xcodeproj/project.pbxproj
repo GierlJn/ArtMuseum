@@ -12,6 +12,7 @@
 		B9ABA10027F20EE70010EB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9ABA0FF27F20EE70010EB7D /* Assets.xcassets */; };
 		B9ABA10327F20EE70010EB7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9ABA10227F20EE70010EB7D /* Preview Assets.xcassets */; };
 		B9ABA10A27F213A90010EB7D /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA10927F213A90010EB7D /* ArtWork.swift */; };
+		B9ABA10C27F214EA0010EB7D /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA10B27F214EA0010EB7D /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		B9ABA0FF27F20EE70010EB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9ABA10227F20EE70010EB7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B9ABA10927F213A90010EB7D /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
+		B9ABA10B27F214EA0010EB7D /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B9ABA10D27F219430010EB7D /* artworks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = artworks.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,7 @@
 		B9ABA0EF27F20EE50010EB7D = {
 			isa = PBXGroup;
 			children = (
+				B9ABA10B27F214EA0010EB7D /* MockData.swift */,
 				B9ABA0FA27F20EE50010EB7D /* ArtMuseum */,
 				B9ABA0F927F20EE50010EB7D /* Products */,
 			);
@@ -58,6 +62,7 @@
 				B9ABA0FF27F20EE70010EB7D /* Assets.xcassets */,
 				B9ABA10127F20EE70010EB7D /* Preview Content */,
 				B9ABA10927F213A90010EB7D /* ArtWork.swift */,
+				B9ABA10D27F219430010EB7D /* artworks.json */,
 			);
 			path = ArtMuseum;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9ABA0FE27F20EE50010EB7D /* ContentView.swift in Sources */,
+				B9ABA10C27F214EA0010EB7D /* MockData.swift in Sources */,
 				B9ABA10A27F213A90010EB7D /* ArtWork.swift in Sources */,
 				B9ABA0FC27F20EE50010EB7D /* ArtMuseumApp.swift in Sources */,
 			);
