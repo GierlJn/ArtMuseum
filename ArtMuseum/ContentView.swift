@@ -14,7 +14,7 @@ struct ContentView: View {
       NavigationView{
         List{
           Section {
-            ArtPreviewCell()
+            ArtPreviewCell().listRowSeparator(.hidden)
           } header: {
             HStack{
               Text("Van Gogh")
@@ -27,6 +27,8 @@ struct ContentView: View {
             }
           }.textCase(nil)
         }.listStyle(PlainListStyle())
+          
+        
         
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarHidden(true)
