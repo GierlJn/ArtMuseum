@@ -20,7 +20,7 @@ struct ArtworkCell: View {
         Text(artwork.title)
           .font(.title)
         HStack{
-          Text(artwork.artistDisplay)
+          Text(artwork.dateDisplay)
         }.font(.body)
       }
       Spacer()

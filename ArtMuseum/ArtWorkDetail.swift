@@ -11,16 +11,31 @@ struct ArtworkDetail: View {
   var artWork = MockData.mockArtWork(id: 1)
   
     var body: some View {
-      VStack{
+      VStack(alignment: .leading){
         Image(uiImage: artWork.image)
           .resizable()
-          .frame(width: 200, height: 200)
-          .border(.black, width: 4)
-        Text(artWork.title)
-          .font(.title)
-          .lineLimit(1)
-          .minimumScaleFactor(0.5)
-      }
+          .frame(height: 300)
+          .scaledToFit()
+        VStack(alignment: .leading, spacing: 10){
+          Text(artWork.title)
+            .font(.title2)
+            .bold()
+            .lineLimit(1)
+            .minimumScaleFactor(0.5)
+          
+          Text("\(artWork.dateDisplay) by \(artWork.artistTitle)")
+            .font(.body)
+            .foregroundColor(.gray)
+  
+          Text("About the artist")
+            .font(.title3)
+            .bold()
+            .padding(.top)
+        }.padding()
+        
+        
+        Spacer()
+      }.ignoresSafeArea(.all, edges: .top)
     }
 }
 

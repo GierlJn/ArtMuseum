@@ -10,7 +10,7 @@ import UIKit
 struct ArtWork: Codable, Identifiable{
   let id: Int
   let title: String
-  let artistDisplay: String
+  let dateDisplay: String
   let artistTitle: String
   let imageId: String
   let altText: String
