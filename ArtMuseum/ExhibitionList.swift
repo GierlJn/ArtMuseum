@@ -24,8 +24,7 @@ struct ExhibitionList: View {
         }
       }.textCase(nil)
     }.listStyle(PlainListStyle())
-      .navigationBarTitleDisplayMode(.inline)
-      .navigationBarHidden(true)
+      
   }
 }
 
