@@ -13,9 +13,15 @@ struct ArtWork: Codable, Identifiable{
   let dateDisplay: String
   let artistTitle: String
   let imageId: String
-  let altText: String
+  let categoryTitles: [String]
+  let thumbnail: Thumbnail
   
   var image: UIImage{
     PlaceholderImage.artworkFullSize
   }
+  
+}
+
+struct Thumbnail: Codable{
+  let altText: String
 }

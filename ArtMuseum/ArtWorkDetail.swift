@@ -27,10 +27,14 @@ struct ArtworkDetail: View {
             .font(.body)
             .foregroundColor(.gray)
   
-          Text("About the artist")
+          Text("About the artwork")
             .font(.title3)
             .bold()
             .padding(.top)
+          
+          Text(artWork.thumbnail.altText)
+            .font(.body)
+          
         }.padding()
         
         

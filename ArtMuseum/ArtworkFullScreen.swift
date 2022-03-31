@@ -12,8 +12,6 @@ struct ArtworkFullScreen: View {
   var relatedArtworks = MockData.mockArtWorks
     var body: some View {
       
-        
-        
         VStack(alignment: .leading) {
           Spacer()
           Text(artWork.title)
