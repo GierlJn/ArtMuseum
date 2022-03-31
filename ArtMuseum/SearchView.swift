@@ -21,7 +21,6 @@ struct SearchView: View {
     }
     .background(Color(uiColor: .systemGray6))
     .clipShape(RoundedRectangle(cornerRadius: 24))
-    .padding()
   }
 }
 

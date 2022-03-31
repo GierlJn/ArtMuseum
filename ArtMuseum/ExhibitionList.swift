@@ -18,7 +18,7 @@ struct ExhibitionList: View {
             .font(.title2)
             .foregroundColor(.black)
             .bold()
-            .padding()
+            
           Spacer()
           Text("See all")
         }
