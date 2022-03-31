@@ -15,6 +15,9 @@ struct ArtWork: Codable, Identifiable{
   let imageId: String
   let categoryTitles: [String]
   let thumbnail: Thumbnail
+  let mediumDisplay: String
+  let dimensions: String
+  let placeOfOrigin: String
   
   var image: UIImage{
     PlaceholderImage.artworkFullSize
