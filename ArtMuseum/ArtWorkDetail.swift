@@ -27,7 +27,31 @@ struct ArtworkDetail: View {
             .font(.body)
             .foregroundColor(.gray)
   
-          Text("About the artwork")
+          Text("Medium")
+            .font(.title3)
+            .bold()
+            .padding(.top)
+          
+          Text(artWork.mediumDisplay)
+            .font(.body)
+          
+          Text("Dimensions")
+            .font(.title3)
+            .bold()
+            .padding(.top)
+          
+          Text(artWork.dimensions)
+            .font(.body)
+          
+          Text("Place of origin")
+            .font(.title3)
+            .bold()
+            .padding(.top)
+          
+          Text(artWork.placeOfOrigin)
+            .font(.body)
+          
+          Text("Description")
             .font(.title3)
             .bold()
             .padding(.top)
