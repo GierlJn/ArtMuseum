@@ -22,6 +22,7 @@ struct CategoryItem: View {
         .background(Color.black)
         .clipShape(Circle())
       Text("\(label)")
+        .font(.callout)
         .bold()
     }
   }
