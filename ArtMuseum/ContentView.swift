@@ -15,7 +15,7 @@ struct ContentView: View {
           Text("")
           SearchView()
             .padding()
-          NavigationLink(isActive: $showSearchResults, destination: ArtworkDetail(artWork: MockData.mockArtWork(id: 1)), label: Text("test"))
+          
           CategorySearchItems()
           ExhibitionList()
         }
