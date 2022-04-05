@@ -7,8 +7,14 @@
 
 import SwiftUI
 
+enum SearchType{
+  case artist, artwork, category
+}
+
 struct ContentView: View {
+  
   @State var showSearchResults = false
+  
     var body: some View {
       NavigationView{
         VStack(alignment: .leading) {
