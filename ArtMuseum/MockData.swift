@@ -10,7 +10,7 @@ import Foundation
 struct MockData{
   static var mockArtWorks: [ArtWork] {
     var mocks = [ArtWork]()
-    for i in 0..<5{
+    for i in 0..<10{
       mocks.append(MockData.mockArtWork(id: i))
     }
     return mocks

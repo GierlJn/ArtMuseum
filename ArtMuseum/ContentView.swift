@@ -13,9 +13,8 @@ struct ContentView: View {
       NavigationView{
         VStack(alignment: .leading) {
           Text("")
-          SearchView()
+          SearchField()
             .padding()
-          
           CategorySearchItems()
           ExhibitionList()
         }
