@@ -11,7 +11,6 @@ struct ArtworkCell: View {
   var artwork: ArtWork
   var body: some View {
     HStack{
-      
       Image(uiImage: artwork.image)
         .resizable()
         .frame(width: 40, height: 40)
@@ -31,7 +30,7 @@ struct ArtworkCell: View {
 
 struct ArtworkCell_Previews: PreviewProvider {
     static var previews: some View {
-      ArtworkCell(artwork: MockData.Artworks.mockArtWork(id: 1))
+      ArtworkCell(artwork: ArtWork.mockArtWork(id: 1))
         .previewLayout(.sizeThatFits)
         
     }

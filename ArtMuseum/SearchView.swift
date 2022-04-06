@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct SearchView: View {
-  @State var showSearchResults = false
   @State var searchType: SearchType
   var columns: [GridItem] =
            Array(repeating: .init(.flexible()), count: 2)
   
-  var artworks = MockData.Artworks.mockArtWorks
+  var artworks = ArtWork.mockedData
   
   var body: some View {
     VStack(alignment: .leading) {
@@ -28,7 +27,8 @@ struct SearchView: View {
         }
       }
     }
-    .navigationBarTitleDisplayMode(.inline)
+    .navigationTitle("Artworks")
+    .navigationBarTitleDisplayMode(.large)
   }
 }
 
@@ -53,5 +53,14 @@ struct SeachGridItem: View {
       Text(artwork.dateDisplay)
         .foregroundColor(Color(uiColor: .systemGray))
     }
+  }
+}
+
+
+// MARK: -Routing
+
+extension SearchView{
+  struct Routing: Equatable {
+    var artworkId: String?
   }
 }

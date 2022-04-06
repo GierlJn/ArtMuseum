@@ -14,6 +14,8 @@ enum SearchType{
 struct HomeView: View {
   
   @State var showSearchResults = false
+  @State var searchType = SearchType.artwork
+  @EnvironmentObject var appState: AppState
   
     var body: some View {
       NavigationView{
