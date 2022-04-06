@@ -31,7 +31,7 @@ struct ArtworkCell: View {
 
 struct ArtworkCell_Previews: PreviewProvider {
     static var previews: some View {
-      ArtworkCell(artwork: MockData.mockArtWork(id: 1))
+      ArtworkCell(artwork: MockData.Artworks.mockArtWork(id: 1))
         .previewLayout(.sizeThatFits)
         
     }

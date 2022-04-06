@@ -13,7 +13,7 @@ struct SearchView: View {
   var columns: [GridItem] =
            Array(repeating: .init(.flexible()), count: 2)
   
-  var artworks = MockData.mockArtWorks
+  var artworks = MockData.Artworks.mockArtWorks
   
   var body: some View {
     VStack(alignment: .leading) {

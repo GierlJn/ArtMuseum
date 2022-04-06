@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ArtworkFullScreen: View {
-  var artWork = MockData.mockArtWork(id: 1)
-  var relatedArtworks = MockData.mockArtWorks
+  var artWork = MockData.Artworks.mockArtWork(id: 1)
+  var relatedArtworks = MockData.Artworks.mockArtWorks
     var body: some View {
       
         VStack(alignment: .leading) {
