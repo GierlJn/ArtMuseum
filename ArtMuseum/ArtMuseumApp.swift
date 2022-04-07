@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ArtMuseumApp: App {
+  
+  @StateObject var appState = AppState()
+  
     var body: some Scene {
         WindowGroup {
-          HomeView()
+          HomeView().environmentObject(appState)
         }
     }
 }

@@ -7,14 +7,11 @@
 
 import SwiftUI
 
-enum SearchType{
-  case artist, artwork, category
-}
-
 struct HomeView: View {
   
   @State var showSearchResults = false
   @State var searchType = SearchType.artwork
+  @EnvironmentObject var appState: AppState
   
     var body: some View {
       NavigationView{
@@ -44,10 +41,10 @@ struct HomeView: View {
               .bold()
           }.padding(.horizontal)
             
-          SearchField()
+          SearchField().environmentObject(appState)
             .padding(.horizontal)
             .padding(.bottom)
-          CategorySearchItems()
+          CategorySearchItems().environmentObject(appState)
           ExhibitionList()
         }
         

@@ -7,18 +7,11 @@
 
 import SwiftUI
 
-struct ActiveSearch{
-  let searchType: SearchType
-  let queryParameter: String
-}
 
 class AppState: ObservableObject{
-  var routing = ViewRouting()
+  @Published var query: String = ""
+  @Published var type: SearchType = .artwork
+  @Published var showSearch: Bool = false
 }
 
 
-extension AppState {
-  struct ViewRouting: Equatable{
-    var searchViewList = SearchView.Routing()
-  }
-}
