@@ -10,7 +10,7 @@
 		B906E41827FDEE2E00701AD7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B906E41727FDEE2E00701AD7 /* Event.swift */; };
 		B906E41A27FDF91F00701AD7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B906E41927FDF91F00701AD7 /* AppState.swift */; };
 		B91F680127FEF75100B3A60F /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F680027FEF75100B3A60F /* SearchType.swift */; };
-		B930B67F27FCC929005B0715 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B930B67E27FCC929005B0715 /* SearchView.swift */; };
+		B930B67F27FCC929005B0715 /* ActiveSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B930B67E27FCC929005B0715 /* ActiveSearch.swift */; };
 		B94F55E627F4426F007C98F1 /* ArtworkFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F55E527F4426F007C98F1 /* ArtworkFullScreen.swift */; };
 		B9ABA0FC27F20EE50010EB7D /* ArtMuseumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA0FB27F20EE50010EB7D /* ArtMuseumApp.swift */; };
 		B9ABA0FE27F20EE50010EB7D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA0FD27F20EE50010EB7D /* HomeView.swift */; };
@@ -32,7 +32,7 @@
 		B906E41727FDEE2E00701AD7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B906E41927FDF91F00701AD7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B91F680027FEF75100B3A60F /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
-		B930B67E27FCC929005B0715 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B930B67E27FCC929005B0715 /* ActiveSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSearch.swift; sourceTree = "<group>"; };
 		B94F55E527F4426F007C98F1 /* ArtworkFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkFullScreen.swift; sourceTree = "<group>"; };
 		B9ABA0F827F20EE50010EB7D /* ArtMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9ABA0FB27F20EE50010EB7D /* ArtMuseumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtMuseumApp.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				B9ABA0FB27F20EE50010EB7D /* ArtMuseumApp.swift */,
 				B9ABA0FD27F20EE50010EB7D /* HomeView.swift */,
 				B91F680027FEF75100B3A60F /* SearchType.swift */,
-				B930B67E27FCC929005B0715 /* SearchView.swift */,
+				B930B67E27FCC929005B0715 /* ActiveSearch.swift */,
 				B9E8687827F5B24B00A86A07 /* CategorySearchItems.swift */,
 				B9E8687627F5AE9000A86A07 /* CategoryItem.swift */,
 				B9E8687427F5AD7100A86A07 /* SearchField.swift */,
@@ -205,7 +205,7 @@
 				B9ABA11327F21C290010EB7D /* ArtWorkDetail.swift in Sources */,
 				B9D7FAD627F59DCD000D34A8 /* ArtPreviewCell.swift in Sources */,
 				B906E41A27FDF91F00701AD7 /* AppState.swift in Sources */,
-				B930B67F27FCC929005B0715 /* SearchView.swift in Sources */,
+				B930B67F27FCC929005B0715 /* ActiveSearch.swift in Sources */,
 				B94F55E627F4426F007C98F1 /* ArtworkFullScreen.swift in Sources */,
 				B9E8687727F5AE9000A86A07 /* CategoryItem.swift in Sources */,
 				B9E8687527F5AD7100A86A07 /* SearchField.swift in Sources */,

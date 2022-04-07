@@ -9,14 +9,12 @@ import SwiftUI
 
 struct HomeView: View {
   
-  @State var showSearchResults = false
-  @State var searchType = SearchType.artwork
   @EnvironmentObject var appState: AppState
   
     var body: some View {
       NavigationView{
         VStack(alignment: .leading) {
-          NavigationLink(destination: SearchView(), isActive: $appState.showSearch) { EmptyView() }
+          NavigationLink(destination: ActiveSearchView(), isActive: $appState.showSearch) { EmptyView() }
           HStack{
             Spacer()
             VStack(spacing: 1){
@@ -42,10 +40,10 @@ struct HomeView: View {
               .bold()
           }.padding(.horizontal)
             
-          SearchField().environmentObject(appState)
+          SearchField()
             .padding(.horizontal)
             .padding(.bottom)
-          CategorySearchItems().environmentObject(appState)
+          CategorySearchItems()
           ExhibitionList()
         }
        

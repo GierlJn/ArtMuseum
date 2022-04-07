@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct SearchView: View {
+struct ActiveSearchView: View {
   var columns: [GridItem] =
            Array(repeating: .init(.flexible()), count: 2)
   
   var artworks = ArtWork.mockedData
+  @EnvironmentObject var appState: AppState
   
   var body: some View {
     VStack(alignment: .leading) {
@@ -21,7 +22,11 @@ struct SearchView: View {
       ScrollView{
         LazyVGrid(columns: columns){
           ForEach(artworks, id: \.id){ artwork in
-            SeachGridItem(artwork: artwork)
+            NavigationLink {
+              ArtworkDetail(artWork: artwork)
+            } label: {
+              SeachGridItem(artwork: artwork)
+            }
           }
         }
       }
@@ -33,7 +38,7 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
   static var previews: some View {
-    SearchView()
+    ActiveSearchView()
   }
 }
 
@@ -57,7 +62,7 @@ struct SeachGridItem: View {
 
 // MARK: -Routing
 
-extension SearchView{
+extension ActiveSearchView{
   struct Routing: Equatable {
     var artworkId: String?
   }
