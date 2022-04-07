@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ArtPreviewCell: View {
   
-  var artworks = MockData.mockArtWorks
+  var artworks = ArtWork.mockedData
   
   var body: some View {
     VStack(alignment: .leading) {
