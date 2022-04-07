@@ -9,13 +9,13 @@ import SwiftUI
 
 struct SearchField: View {
   
-  @EnvironmentObject var appState: AppState
+  @EnvironmentObject var searchListVM: SearchListViewModel
   
   var body: some View {
     HStack{
       Image(systemName: "magnifyingglass")
         .padding(.leading)
-      TextField("Search artwork, artist or exhibition", text: $appState.query)
+      TextField("Search artwork, artist or exhibition", text: $searchListVM.query)
         .lineLimit(1)
         .frame(height: 50)
     }

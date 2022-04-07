@@ -9,12 +9,11 @@ import SwiftUI
 
 struct HomeView: View {
   
-  @EnvironmentObject var appState: AppState
+  @EnvironmentObject var searchListVM: SearchListViewModel
   
     var body: some View {
       NavigationView{
         VStack(alignment: .leading) {
-          NavigationLink(destination: ActiveSearchView(), isActive: $appState.showSearch) { EmptyView() }
           HStack{
             Spacer()
             VStack(spacing: 1){
@@ -46,7 +45,6 @@ struct HomeView: View {
           CategorySearchItems()
           ExhibitionList()
         }
-       
         .navigationBarHidden(true)
       }
     }

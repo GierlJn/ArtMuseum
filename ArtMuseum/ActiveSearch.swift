@@ -12,7 +12,7 @@ struct ActiveSearchView: View {
            Array(repeating: .init(.flexible()), count: 2)
   
   var artworks = ArtWork.mockedData
-  @EnvironmentObject var appState: AppState
+  @EnvironmentObject var searchListVM: SearchListViewModel
   
   var body: some View {
     VStack(alignment: .leading) {

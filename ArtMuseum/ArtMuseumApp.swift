@@ -9,12 +9,10 @@ import SwiftUI
 
 @main
 struct ArtMuseumApp: App {
-  
-  @StateObject var appState = AppState()
-  
+  @StateObject var searchListVM = SearchListViewModel()
     var body: some Scene {
         WindowGroup {
-          HomeView().environmentObject(appState)
+          HomeView().environmentObject(searchListVM)
         }
     }
 }
