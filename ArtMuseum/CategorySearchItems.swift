@@ -14,17 +14,13 @@ struct CategorySearchItems: View {
   var body: some View {
     HStack(spacing: 10){
       NavigationLink {
-        ActiveSearchView().onAppear {
-          searchListVM.selectedSearchType = .artist
-        }
+        SearchView(type: .artist)
       } label: {
         CategoryItem(image: Image(systemName: "paintbrush.pointed"), label: "Artist")
       }
       
       NavigationLink {
-        ActiveSearchView().onAppear {
-          searchListVM.selectedSearchType = .artwork
-        }
+        SearchView(type: .artwork)
       } label: {
         CategoryItem(image: Image(systemName: "paintpalette"), label: "Artwork")
       }

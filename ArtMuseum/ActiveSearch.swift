@@ -7,12 +7,17 @@
 
 import SwiftUI
 
-struct ActiveSearchView: View {
+
+
+struct SearchView: View {
+  
+  @State var query = ""
+  var type: SearchType
+  
   var columns: [GridItem] =
            Array(repeating: .init(.flexible()), count: 2)
   
   var artworks = ArtWork.mockedData
-  @EnvironmentObject var searchListVM: SearchListViewModel
   
   var body: some View {
     VStack(alignment: .leading) {
@@ -31,14 +36,14 @@ struct ActiveSearchView: View {
         }
       }
     }
-    .navigationTitle("Artworks")
+    .navigationTitle(type.rawValue)
     .navigationBarTitleDisplayMode(.large)
   }
 }
 
 struct SearchView_Previews: PreviewProvider {
   static var previews: some View {
-    ActiveSearchView()
+    SearchView(type: .artwork)
   }
 }
 
@@ -56,14 +61,5 @@ struct SeachGridItem: View {
       Text(artwork.dateDisplay)
         .foregroundColor(Color(uiColor: .systemGray))
     }
-  }
-}
-
-
-// MARK: -Routing
-
-extension ActiveSearchView{
-  struct Routing: Equatable {
-    var artworkId: String?
   }
 }

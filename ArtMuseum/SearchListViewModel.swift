@@ -10,4 +10,5 @@ import Foundation
 class SearchListViewModel: ObservableObject{
   @Published var query = ""
   @Published var selectedSearchType: SearchType? = nil
+
 }

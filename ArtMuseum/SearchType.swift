@@ -7,6 +7,8 @@
 
 import Foundation
 
-enum SearchType{
-  case artist, artwork, category
+enum SearchType: String{
+  case artist = "Artists"
+  case artwork = "Artworks"
+  case events = "Events"
 }
