@@ -15,6 +15,8 @@ struct CategorySearchItems: View {
     HStack(spacing: 10){
       Button {
         
+        appState.type = .artist
+        appState.showSearch = true
       } label: {
         CategoryItem(image: Image(systemName: "paintbrush.pointed"), label: "Artist")
       }

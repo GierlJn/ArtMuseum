@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SearchView: View {
-  @State var searchType: SearchType
   var columns: [GridItem] =
            Array(repeating: .init(.flexible()), count: 2)
   
@@ -22,7 +21,7 @@ struct SearchView: View {
       ScrollView{
         LazyVGrid(columns: columns){
           ForEach(artworks, id: \.id){ artwork in
-            SeachGridItem(artwork: artwork, searchType: searchType)
+            SeachGridItem(artwork: artwork)
           }
         }
       }
@@ -34,13 +33,12 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
   static var previews: some View {
-    SearchView(searchType: .artist)
+    SearchView()
   }
 }
 
 struct SeachGridItem: View {
   var artwork: ArtWork
-  var searchType: SearchType
   
   var body: some View {
     VStack{

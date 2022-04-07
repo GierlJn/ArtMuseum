@@ -16,6 +16,7 @@ struct HomeView: View {
     var body: some View {
       NavigationView{
         VStack(alignment: .leading) {
+          NavigationLink(destination: SearchView(), isActive: $appState.showSearch) { EmptyView() }
           HStack{
             Spacer()
             VStack(spacing: 1){
@@ -47,7 +48,7 @@ struct HomeView: View {
           CategorySearchItems().environmentObject(appState)
           ExhibitionList()
         }
-        
+       
         .navigationBarHidden(true)
       }
     }
