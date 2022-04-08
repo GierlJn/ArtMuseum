@@ -17,7 +17,7 @@ struct SearchView: View {
   var columns: [GridItem] =
            Array(repeating: .init(.flexible()), count: 2)
   
-  @State var artworks = ArtWork.mockedData
+  @State var artworks = [ArtWork]()
   
   var body: some View {
     VStack(alignment: .leading) {
@@ -40,12 +40,12 @@ struct SearchView: View {
     .navigationBarTitleDisplayMode(.large)
     .onAppear {
       Task{
-        await fetchArtworks()
+        await loadArtworks()
       }
     }
   }
   
-  func fetchArtworks() async{
+  func loadArtworks() async{
     let networkManager = NetworkManager()
     do{
       artworks = try await networkManager.fetchArtworks(query: query)
@@ -73,8 +73,14 @@ struct SeachGridItem: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .padding()
       Text(artwork.wrappedTitle)
+        .font(.caption)
+        .lineLimit(2)
+        .minimumScaleFactor(0.7)
       Text(artwork.wrappedDateDisplay)
+        .font(.caption)
+        .minimumScaleFactor(0.7)
         .foregroundColor(Color(uiColor: .systemGray))
-    }
+    }.frame(height: 290)
+      .accentColor(.black)
   }
 }
