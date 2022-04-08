@@ -11,8 +11,7 @@ struct ArtworkCell: View {
   var artwork: ArtWork
   var body: some View {
     HStack{
-      Image(uiImage: artwork.image)
-        .resizable()
+      ImageLoader(imageId: artwork.imageId)
         .frame(width: 40, height: 40)
         .padding()
       VStack(alignment: .leading){

@@ -12,8 +12,7 @@ struct ArtworkDetail: View {
   
     var body: some View {
       VStack(alignment: .leading){
-        Image(uiImage: artWork.image)
-          .resizable()
+        ImageLoader(imageId: artWork.imageId)
           .frame(height: 300)
           .scaledToFit()
         VStack(alignment: .leading, spacing: 10){
