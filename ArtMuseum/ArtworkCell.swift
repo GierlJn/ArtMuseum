@@ -16,10 +16,10 @@ struct ArtworkCell: View {
         .frame(width: 40, height: 40)
         .padding()
       VStack(alignment: .leading){
-        Text(artwork.title)
+        Text(artwork.wrappedTitle)
           .font(.title)
         HStack{
-          Text(artwork.dateDisplay)
+          Text(artwork.wrappedDateDisplay)
         }.font(.body)
       }
       Spacer()

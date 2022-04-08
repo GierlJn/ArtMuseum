@@ -14,7 +14,7 @@ struct ArtworkFullScreen: View {
       
         VStack(alignment: .leading) {
           Spacer()
-          Text(artWork.title)
+          Text(artWork.wrappedTitle)
             .foregroundColor(.white)
             .bold()
             .lineLimit(2)

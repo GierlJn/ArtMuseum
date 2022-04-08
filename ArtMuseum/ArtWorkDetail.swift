@@ -17,13 +17,13 @@ struct ArtworkDetail: View {
           .frame(height: 300)
           .scaledToFit()
         VStack(alignment: .leading, spacing: 10){
-          Text(artWork.title)
+          Text(artWork.wrappedTitle)
             .font(.title2)
             .bold()
             .lineLimit(1)
             .minimumScaleFactor(0.5)
           
-          Text("\(artWork.dateDisplay) by \(artWork.artistTitle)")
+          Text("\(artWork.wrappedDateDisplay) by \(artWork.wrappedArtistTitle)")
             .font(.body)
             .foregroundColor(.gray)
   
@@ -32,7 +32,7 @@ struct ArtworkDetail: View {
             .bold()
             .padding(.top)
           
-          Text(artWork.mediumDisplay)
+          Text(artWork.wrappedMediumDisplay)
             .font(.body)
           
           Text("Dimensions")
@@ -40,7 +40,7 @@ struct ArtworkDetail: View {
             .bold()
             .padding(.top)
           
-          Text(artWork.dimensions)
+          Text(artWork.wrappedDimensions)
             .font(.body)
           
           Text("Place of origin")
@@ -48,7 +48,7 @@ struct ArtworkDetail: View {
             .bold()
             .padding(.top)
           
-          Text(artWork.placeOfOrigin)
+          Text(artWork.wrappedPlaceOfOrigin)
             .font(.body)
           
           Text("Description")
@@ -56,8 +56,8 @@ struct ArtworkDetail: View {
             .bold()
             .padding(.top)
           
-          Text(artWork.thumbnail.altText)
-            .font(.body)
+//          Text(artWork.thumbnail.altText)
+//            .font(.body)
           
         }.padding()
         

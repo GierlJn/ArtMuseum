@@ -10,6 +10,8 @@
 		B906E41827FDEE2E00701AD7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B906E41727FDEE2E00701AD7 /* Event.swift */; };
 		B91F680127FEF75100B3A60F /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F680027FEF75100B3A60F /* SearchType.swift */; };
 		B91F680327FF464F00B3A60F /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F680227FF464F00B3A60F /* SearchListViewModel.swift */; };
+		B91F680527FF5D9100B3A60F /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F680427FF5D9100B3A60F /* Artist.swift */; };
+		B91F680727FF5E6800B3A60F /* NetworkworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F680627FF5E6800B3A60F /* NetworkworkManager.swift */; };
 		B930B67F27FCC929005B0715 /* ActiveSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B930B67E27FCC929005B0715 /* ActiveSearch.swift */; };
 		B94F55E627F4426F007C98F1 /* ArtworkFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F55E527F4426F007C98F1 /* ArtworkFullScreen.swift */; };
 		B9ABA0FC27F20EE50010EB7D /* ArtMuseumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA0FB27F20EE50010EB7D /* ArtMuseumApp.swift */; };
@@ -32,6 +34,8 @@
 		B906E41727FDEE2E00701AD7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B91F680027FEF75100B3A60F /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
 		B91F680227FF464F00B3A60F /* SearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewModel.swift; sourceTree = "<group>"; };
+		B91F680427FF5D9100B3A60F /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		B91F680627FF5E6800B3A60F /* NetworkworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkworkManager.swift; sourceTree = "<group>"; };
 		B930B67E27FCC929005B0715 /* ActiveSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSearch.swift; sourceTree = "<group>"; };
 		B94F55E527F4426F007C98F1 /* ArtworkFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkFullScreen.swift; sourceTree = "<group>"; };
 		B9ABA0F827F20EE50010EB7D /* ArtMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +75,7 @@
 				B9ABA10B27F214EA0010EB7D /* MockData.swift */,
 				B9ABA10D27F219430010EB7D /* artworks.json */,
 				B9ABA10927F213A90010EB7D /* ArtWork.swift */,
+				B91F680427FF5D9100B3A60F /* Artist.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 				B91F680227FF464F00B3A60F /* SearchListViewModel.swift */,
 				B91F680027FEF75100B3A60F /* SearchType.swift */,
 				B930B67E27FCC929005B0715 /* ActiveSearch.swift */,
+				B91F680627FF5E6800B3A60F /* NetworkworkManager.swift */,
 				B9E8687827F5B24B00A86A07 /* CategorySearchItems.swift */,
 				B9E8687627F5AE9000A86A07 /* CategoryItem.swift */,
 				B9E8687427F5AD7100A86A07 /* SearchField.swift */,
@@ -196,6 +202,7 @@
 				B9ABA11527F21E720010EB7D /* ArtworkCell.swift in Sources */,
 				B9D7FAD427F59DB6000D34A8 /* ExhibitionList.swift in Sources */,
 				B91F680127FEF75100B3A60F /* SearchType.swift in Sources */,
+				B91F680727FF5E6800B3A60F /* NetworkworkManager.swift in Sources */,
 				B9ABA10F27F21A660010EB7D /* PlaceholderImage.swift in Sources */,
 				B906E41827FDEE2E00701AD7 /* Event.swift in Sources */,
 				B9ABA10C27F214EA0010EB7D /* MockData.swift in Sources */,
@@ -204,6 +211,7 @@
 				B9ABA0FC27F20EE50010EB7D /* ArtMuseumApp.swift in Sources */,
 				B91F680327FF464F00B3A60F /* SearchListViewModel.swift in Sources */,
 				B9ABA11327F21C290010EB7D /* ArtWorkDetail.swift in Sources */,
+				B91F680527FF5D9100B3A60F /* Artist.swift in Sources */,
 				B9D7FAD627F59DCD000D34A8 /* ArtPreviewCell.swift in Sources */,
 				B930B67F27FCC929005B0715 /* ActiveSearch.swift in Sources */,
 				B94F55E627F4426F007C98F1 /* ArtworkFullScreen.swift in Sources */,
