@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ArtPreviewCell: View {
+struct HorizontalListCell: View {
   
   var artworks = ArtWork.mockedData
   
@@ -19,8 +19,7 @@ struct ArtPreviewCell: View {
             NavigationLink {
               ArtworkDetail(artWork: artwork)
             } label: {
-              Image(uiImage: artwork.image)
-                .resizable()
+              ImageLoader(imageId: artwork.imageId)
                 .frame(width: 200, height: 200)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 .padding(.horizontal, 4)
@@ -35,6 +34,6 @@ struct ArtPreviewCell: View {
 
 struct ArtPreviewcell_Previews: PreviewProvider {
     static var previews: some View {
-        ArtPreviewCell()
+        HorizontalListCell()
     }
 }

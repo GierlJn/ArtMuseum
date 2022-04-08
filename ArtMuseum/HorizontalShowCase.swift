@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ExhibitionList: View {
+struct HorizontalShowCase: View {
   var body: some View {
     List{
       Section {
-        ArtPreviewCell().listRowSeparator(.hidden)
+        HorizontalListCell().listRowSeparator(.hidden)
       } header: {
         HStack{
           Text("Van Gogh")
@@ -30,6 +30,6 @@ struct ExhibitionList: View {
 
 struct ExhibitionList_Previews: PreviewProvider {
     static var previews: some View {
-        ExhibitionList()
+        HorizontalShowCase()
     }
 }

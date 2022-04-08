@@ -15,7 +15,8 @@ struct ImageLoader: View {
       AsyncImage(url: urlBuilder()){ image in
         image.resizable()
       } placeholder: {
-        Image(systemName: "cross")
+        ProgressView()
+            .progressViewStyle(CircularProgressViewStyle(tint: .black))
       }
     }
   

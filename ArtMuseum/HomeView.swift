@@ -43,7 +43,7 @@ struct HomeView: View {
             .padding(.horizontal)
             .padding(.bottom)
           CategorySearchItems()
-          ExhibitionList()
+          HorizontalShowCase()
         }
         .navigationBarHidden(true)
       }

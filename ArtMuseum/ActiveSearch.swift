@@ -67,8 +67,7 @@ struct SeachGridItem: View {
   
   var body: some View {
     VStack{
-      Image(uiImage: artwork.image)
-        .resizable()
+      ImageLoader(imageId: artwork.imageId)
         .frame(height: 200)
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .padding()
