@@ -116,9 +116,9 @@
 				B9D7FAD327F59DB6000D34A8 /* HorizontalShowCase.swift */,
 				B9ABA11427F21E720010EB7D /* ArtworkCell.swift */,
 				B9ABA11227F21C290010EB7D /* ArtWorkDetail.swift */,
+				B94F55E527F4426F007C98F1 /* ArtworkFullScreen.swift */,
 				B9ABA0FF27F20EE70010EB7D /* Assets.xcassets */,
 				B9ABA10127F20EE70010EB7D /* Preview Content */,
-				B94F55E527F4426F007C98F1 /* ArtworkFullScreen.swift */,
 			);
 			path = ArtMuseum;
 			sourceTree = "<group>";
