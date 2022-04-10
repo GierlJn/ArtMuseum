@@ -12,7 +12,7 @@ struct Artist: Codable, Identifiable{
   let id: Int
   let title: String?
   let sortTitle: String?
-  let artworkIds: String?
+  let artworkIds: [Int]?
   let birthDate: String?
   let deathDate: String?
   
@@ -24,8 +24,8 @@ struct Artist: Codable, Identifiable{
     sortTitle ?? "N/A"
   }
   
-  var wrappedArtworkIds: String{
-    artworkIds ?? "N/A"
+  var wrappedArtworkIds: [Int]{
+    artworkIds ?? []
   }
   
   var wrappedBirthDate: String{

@@ -38,4 +38,47 @@ extension Event {
   }
 }
 
+extension Artist{
+  static var mockedData: [Artist]{
+    var mocks = [Artist]()
+    for i in 0..<10{
+      mocks.append(mockArtist(id: i))
+    }
+    return mocks
+  }
+  
+  static func mockArtist(id: Int)->Artist{
+    Artist(id: id, title: "Van Gogh", sortTitle: "Van Gogh", artworkIds: [
+      117581,
+      207100,
+      200136,
+      198539,
+      198538,
+      192502,
+      191316,
+      190822,
+      156866,
+      148438,
+      148437,
+      135455,
+      111990,
+      111847,
+      111846,
+      111845,
+      111844,
+      102704,
+      100903,
+      99583,
+      97402,
+      97056,
+      97053,
+      93831,
+      34149,
+      33302,
+      33301,
+      105207
+    ], birthDate: <#T##String?#>, deathDate: <#T##String?#>)
+  }
+}
+
 #endif
