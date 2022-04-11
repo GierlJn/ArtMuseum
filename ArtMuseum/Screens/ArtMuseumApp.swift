@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct ArtMuseumApp: App {
-  @StateObject var searchListVM = SearchListViewModel()
+  @StateObject var searchListVM = SearchViewModel()
     var body: some Scene {
         WindowGroup {
           HomeView().environmentObject(searchListVM)

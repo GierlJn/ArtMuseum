@@ -54,10 +54,6 @@ struct ArtworkDetail: View {
             .font(.title3)
             .bold()
             .padding(.top)
-          
-//          Text(artWork.thumbnail.altText)
-//            .font(.body)
-          
         }.padding()
         
         

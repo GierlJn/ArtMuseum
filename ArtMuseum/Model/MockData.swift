@@ -77,7 +77,7 @@ extension Artist{
       33302,
       33301,
       105207
-    ], birthDate: <#T##String?#>, deathDate: <#T##String?#>)
+    ], birthDate: "1999", deathDate: "2015")
   }
 }
 

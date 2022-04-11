@@ -7,22 +7,20 @@
 
 import SwiftUI
 
-
-
-struct SearchView: View {
+struct Search: View {
   
   @State var query = ""
   var type: SearchType
-  
+  @EnvironmentObject var searchListVM: SearchViewModel
   var columns: [GridItem] =
-           Array(repeating: .init(.flexible()), count: 2)
+  Array(repeating: .init(.flexible()), count: 2)
   
   @State var artworks = [ArtWork]()
   
   var body: some View {
     VStack(alignment: .leading) {
       Text("")
-      SearchField()
+      SearchField().environmentObject(searchListVM)
         .padding()
       ScrollView{
         LazyVGrid(columns: columns){
@@ -58,7 +56,7 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
   static var previews: some View {
-    SearchView(type: .artwork)
+    Search(type: .artwork).environmentObject(SearchViewModel())
   }
 }
 

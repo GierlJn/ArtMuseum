@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchField: View {
   
-  @EnvironmentObject var searchListVM: SearchListViewModel
+  @EnvironmentObject var searchListVM: SearchViewModel
   
   var body: some View {
     HStack{
@@ -26,6 +26,6 @@ struct SearchField: View {
 
 struct SearchField_Previews: PreviewProvider {
     static var previews: some View {
-        SearchField()
+        SearchField().environmentObject(SearchViewModel())
     }
 }

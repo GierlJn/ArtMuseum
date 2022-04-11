@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B906E41827FDEE2E00701AD7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B906E41727FDEE2E00701AD7 /* Event.swift */; };
-		B91F680127FEF75100B3A60F /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F680027FEF75100B3A60F /* SearchType.swift */; };
-		B91F680327FF464F00B3A60F /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F680227FF464F00B3A60F /* SearchListViewModel.swift */; };
+		B91F680327FF464F00B3A60F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F680227FF464F00B3A60F /* SearchViewModel.swift */; };
 		B91F680527FF5D9100B3A60F /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F680427FF5D9100B3A60F /* Artist.swift */; };
 		B91F680727FF5E6800B3A60F /* NetworkworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F680627FF5E6800B3A60F /* NetworkworkManager.swift */; };
-		B930B67F27FCC929005B0715 /* ActiveSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B930B67E27FCC929005B0715 /* ActiveSearch.swift */; };
-		B94F55E627F4426F007C98F1 /* ArtworkFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F55E527F4426F007C98F1 /* ArtworkFullScreen.swift */; };
+		B930B67F27FCC929005B0715 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B930B67E27FCC929005B0715 /* Search.swift */; };
+		B94F55E627F4426F007C98F1 /* ArtistGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F55E527F4426F007C98F1 /* ArtistGallery.swift */; };
 		B9ABA0FC27F20EE50010EB7D /* ArtMuseumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA0FB27F20EE50010EB7D /* ArtMuseumApp.swift */; };
 		B9ABA0FE27F20EE50010EB7D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA0FD27F20EE50010EB7D /* HomeView.swift */; };
 		B9ABA10027F20EE70010EB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9ABA0FF27F20EE70010EB7D /* Assets.xcassets */; };
@@ -22,23 +21,20 @@
 		B9ABA10C27F214EA0010EB7D /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA10B27F214EA0010EB7D /* MockData.swift */; };
 		B9ABA10F27F21A660010EB7D /* PlaceholderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA10E27F21A660010EB7D /* PlaceholderImage.swift */; };
 		B9ABA11327F21C290010EB7D /* ArtWorkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA11227F21C290010EB7D /* ArtWorkDetail.swift */; };
-		B9ABA11527F21E720010EB7D /* ArtworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ABA11427F21E720010EB7D /* ArtworkCell.swift */; };
 		B9CCB920280078540074E567 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CCB91F280078540074E567 /* ImageLoader.swift */; };
-		B9D7FAD427F59DB6000D34A8 /* HorizontalShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7FAD327F59DB6000D34A8 /* HorizontalShowCase.swift */; };
+		B9D7FAD427F59DB6000D34A8 /* HorizontalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7FAD327F59DB6000D34A8 /* HorizontalList.swift */; };
 		B9D7FAD627F59DCD000D34A8 /* HorizontalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7FAD527F59DCD000D34A8 /* HorizontalListCell.swift */; };
 		B9E8687527F5AD7100A86A07 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E8687427F5AD7100A86A07 /* SearchField.swift */; };
-		B9E8687727F5AE9000A86A07 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E8687627F5AE9000A86A07 /* CategoryItem.swift */; };
 		B9E8687927F5B24B00A86A07 /* CategorySearchItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E8687827F5B24B00A86A07 /* CategorySearchItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B906E41727FDEE2E00701AD7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		B91F680027FEF75100B3A60F /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
-		B91F680227FF464F00B3A60F /* SearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewModel.swift; sourceTree = "<group>"; };
+		B91F680227FF464F00B3A60F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		B91F680427FF5D9100B3A60F /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		B91F680627FF5E6800B3A60F /* NetworkworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkworkManager.swift; sourceTree = "<group>"; };
-		B930B67E27FCC929005B0715 /* ActiveSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSearch.swift; sourceTree = "<group>"; };
-		B94F55E527F4426F007C98F1 /* ArtworkFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkFullScreen.swift; sourceTree = "<group>"; };
+		B930B67E27FCC929005B0715 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		B94F55E527F4426F007C98F1 /* ArtistGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistGallery.swift; sourceTree = "<group>"; };
 		B9ABA0F827F20EE50010EB7D /* ArtMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9ABA0FB27F20EE50010EB7D /* ArtMuseumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtMuseumApp.swift; sourceTree = "<group>"; };
 		B9ABA0FD27F20EE50010EB7D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -49,12 +45,10 @@
 		B9ABA10D27F219430010EB7D /* artworks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = artworks.json; sourceTree = "<group>"; };
 		B9ABA10E27F21A660010EB7D /* PlaceholderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImage.swift; sourceTree = "<group>"; };
 		B9ABA11227F21C290010EB7D /* ArtWorkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkDetail.swift; sourceTree = "<group>"; };
-		B9ABA11427F21E720010EB7D /* ArtworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkCell.swift; sourceTree = "<group>"; };
 		B9CCB91F280078540074E567 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		B9D7FAD327F59DB6000D34A8 /* HorizontalShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalShowCase.swift; sourceTree = "<group>"; };
+		B9D7FAD327F59DB6000D34A8 /* HorizontalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalList.swift; sourceTree = "<group>"; };
 		B9D7FAD527F59DCD000D34A8 /* HorizontalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListCell.swift; sourceTree = "<group>"; };
 		B9E8687427F5AD7100A86A07 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
-		B9E8687627F5AE9000A86A07 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		B9E8687827F5B24B00A86A07 /* CategorySearchItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySearchItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,22 +95,10 @@
 		B9ABA0FA27F20EE50010EB7D /* ArtMuseum */ = {
 			isa = PBXGroup;
 			children = (
+				B9C5A71E2804B7D000D39935 /* Screens */,
 				B906E41627FDEE1500701AD7 /* Model */,
-				B9ABA0FB27F20EE50010EB7D /* ArtMuseumApp.swift */,
-				B9ABA0FD27F20EE50010EB7D /* HomeView.swift */,
-				B9CCB91F280078540074E567 /* ImageLoader.swift */,
-				B91F680227FF464F00B3A60F /* SearchListViewModel.swift */,
-				B91F680027FEF75100B3A60F /* SearchType.swift */,
-				B930B67E27FCC929005B0715 /* ActiveSearch.swift */,
-				B91F680627FF5E6800B3A60F /* NetworkworkManager.swift */,
-				B9E8687827F5B24B00A86A07 /* CategorySearchItems.swift */,
-				B9E8687627F5AE9000A86A07 /* CategoryItem.swift */,
-				B9E8687427F5AD7100A86A07 /* SearchField.swift */,
-				B9D7FAD527F59DCD000D34A8 /* HorizontalListCell.swift */,
-				B9D7FAD327F59DB6000D34A8 /* HorizontalShowCase.swift */,
-				B9ABA11427F21E720010EB7D /* ArtworkCell.swift */,
-				B9ABA11227F21C290010EB7D /* ArtWorkDetail.swift */,
-				B94F55E527F4426F007C98F1 /* ArtworkFullScreen.swift */,
+				B9C5A71F2804B88000D39935 /* Utilities */,
+				B9C5A71D2804B7C200D39935 /* HorizontalList */,
 				B9ABA0FF27F20EE70010EB7D /* Assets.xcassets */,
 				B9ABA10127F20EE70010EB7D /* Preview Content */,
 			);
@@ -129,6 +111,55 @@
 				B9ABA10227F20EE70010EB7D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B9C5A71D2804B7C200D39935 /* HorizontalList */ = {
+			isa = PBXGroup;
+			children = (
+				B9D7FAD327F59DB6000D34A8 /* HorizontalList.swift */,
+				B9D7FAD527F59DCD000D34A8 /* HorizontalListCell.swift */,
+			);
+			path = HorizontalList;
+			sourceTree = "<group>";
+		};
+		B9C5A71E2804B7D000D39935 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B9ABA0FB27F20EE50010EB7D /* ArtMuseumApp.swift */,
+				B9C5A7202804BE2700D39935 /* Home */,
+				B9C5A7212804BE3D00D39935 /* Search */,
+				B9ABA11227F21C290010EB7D /* ArtWorkDetail.swift */,
+				B94F55E527F4426F007C98F1 /* ArtistGallery.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B9C5A71F2804B88000D39935 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B91F680627FF5E6800B3A60F /* NetworkworkManager.swift */,
+				B9CCB91F280078540074E567 /* ImageLoader.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B9C5A7202804BE2700D39935 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B9ABA0FD27F20EE50010EB7D /* HomeView.swift */,
+				B9E8687827F5B24B00A86A07 /* CategorySearchItems.swift */,
+				B9E8687427F5AD7100A86A07 /* SearchField.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B9C5A7212804BE3D00D39935 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B930B67E27FCC929005B0715 /* Search.swift */,
+				B91F680227FF464F00B3A60F /* SearchViewModel.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,10 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9ABA0FE27F20EE50010EB7D /* HomeView.swift in Sources */,
-				B9ABA11527F21E720010EB7D /* ArtworkCell.swift in Sources */,
 				B9CCB920280078540074E567 /* ImageLoader.swift in Sources */,
-				B9D7FAD427F59DB6000D34A8 /* HorizontalShowCase.swift in Sources */,
-				B91F680127FEF75100B3A60F /* SearchType.swift in Sources */,
+				B9D7FAD427F59DB6000D34A8 /* HorizontalList.swift in Sources */,
 				B91F680727FF5E6800B3A60F /* NetworkworkManager.swift in Sources */,
 				B9ABA10F27F21A660010EB7D /* PlaceholderImage.swift in Sources */,
 				B906E41827FDEE2E00701AD7 /* Event.swift in Sources */,
@@ -213,13 +242,12 @@
 				B9ABA10A27F213A90010EB7D /* ArtWork.swift in Sources */,
 				B9E8687927F5B24B00A86A07 /* CategorySearchItems.swift in Sources */,
 				B9ABA0FC27F20EE50010EB7D /* ArtMuseumApp.swift in Sources */,
-				B91F680327FF464F00B3A60F /* SearchListViewModel.swift in Sources */,
+				B91F680327FF464F00B3A60F /* SearchViewModel.swift in Sources */,
 				B9ABA11327F21C290010EB7D /* ArtWorkDetail.swift in Sources */,
 				B91F680527FF5D9100B3A60F /* Artist.swift in Sources */,
 				B9D7FAD627F59DCD000D34A8 /* HorizontalListCell.swift in Sources */,
-				B930B67F27FCC929005B0715 /* ActiveSearch.swift in Sources */,
-				B94F55E627F4426F007C98F1 /* ArtworkFullScreen.swift in Sources */,
-				B9E8687727F5AE9000A86A07 /* CategoryItem.swift in Sources */,
+				B930B67F27FCC929005B0715 /* Search.swift in Sources */,
+				B94F55E627F4426F007C98F1 /* ArtistGallery.swift in Sources */,
 				B9E8687527F5AD7100A86A07 /* SearchField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

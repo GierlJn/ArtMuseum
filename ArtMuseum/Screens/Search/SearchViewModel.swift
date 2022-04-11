@@ -7,8 +7,13 @@
 
 import Foundation
 
-class SearchListViewModel: ObservableObject{
+class SearchViewModel: ObservableObject{
   @Published var query = ""
   @Published var selectedSearchType: SearchType? = nil
+}
 
+enum SearchType: String{
+  case artist = "Artists"
+  case artwork = "Artworks"
+  case events = "Events"
 }

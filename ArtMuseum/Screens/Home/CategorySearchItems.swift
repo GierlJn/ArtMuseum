@@ -9,18 +9,18 @@ import SwiftUI
 
 struct CategorySearchItems: View {
   
-  @EnvironmentObject var searchListVM: SearchListViewModel
+  @EnvironmentObject var searchListVM: SearchViewModel
   
   var body: some View {
     HStack(spacing: 10){
       NavigationLink {
-        SearchView(type: .artist)
+        Search(type: .artist).environmentObject(searchListVM)
       } label: {
         CategoryItem(image: Image(systemName: "paintbrush.pointed"), label: "Artist")
       }
       
       NavigationLink {
-        SearchView(type: .artwork)
+        Search(type: .artwork).environmentObject(searchListVM)
       } label: {
         CategoryItem(image: Image(systemName: "paintpalette"), label: "Artwork")
       }
@@ -31,10 +31,33 @@ struct CategorySearchItems: View {
       .padding(.leading)
       .accentColor(.black)
   }
+  
+  
+  struct CategoryItem: View {
+    var image: Image
+    var label: String
+    
+    var body: some View {
+      VStack{
+        image
+          .resizable()
+          .foregroundColor(.white)
+          .frame(width: 30, height: 30)
+          .padding()
+          .background(Color.black)
+          .clipShape(Circle())
+        Text("\(label)")
+          .font(.callout)
+          .bold()
+      }
+    }
+  }
 }
 
+
+
 struct CategorySearchItems_Previews: PreviewProvider {
-    static var previews: some View {
-        CategorySearchItems()
-    }
+  static var previews: some View {
+    CategorySearchItems().environmentObject(SearchViewModel())
+  }
 }

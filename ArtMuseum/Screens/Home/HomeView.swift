@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
   
-  @EnvironmentObject var searchListVM: SearchListViewModel
+  @EnvironmentObject var searchListVM: SearchViewModel
   
     var body: some View {
       NavigationView{
@@ -39,10 +39,10 @@ struct HomeView: View {
               .bold()
           }.padding(.horizontal)
             
-          SearchField()
+          SearchField().environmentObject(searchListVM)
             .padding(.horizontal)
             .padding(.bottom)
-          CategorySearchItems()
+          CategorySearchItems().environmentObject(searchListVM)
           HorizontalShowCase()
         }
         .navigationBarHidden(true)
@@ -52,6 +52,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-      HomeView()
+      HomeView().environmentObject(SearchViewModel())
     }
 }
